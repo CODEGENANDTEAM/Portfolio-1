@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGen & Co. Portfolio</title>
+    <link rel="icon" type="image/png" href="title-logo.png">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+
+    
+
+
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">CodeGen & Co.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Building Solutions, One Line of Code at a Time</h1>
+            <p class="hero-subtitle">Innovative software development to meet your business needs.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At CodeGen & Co., we specialize in delivering high-quality software solutions tailored to your requirements. With a focus on innovation and excellence, we bring your ideas to life.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-card">Web Development</div>
+        <div class="service-card">Mobile App Development</div>
+        <div class="service-card">Standalone Systems</div>
+        <div class="service-card">CRM</div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Our Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal('subway.jpg')">
+                <p>SUBWAY INDIA APP</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('freshly.jpg')">
+                <p>FRESHLY</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('bluebus.jpg')">
+                <p>BLUE-BUS</p>
+            </div>
+            <div class="portfolio-item" onclick="openVModal('shoe.mp4')">
+                <video src="shoe.mp4" autoplay muted loop></video>
+                <p>SHOESTORE</p>
+            </div>
+            <div class="portfolio-item" onclick="openVModal('tattoo.mp4')">
+                <video src="tattoo.mp4" autoplay muted loop></video>
+                <p>CAIM STUDIOS</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('ecommerce-image.png')">
+                <p>E-commerce</p>
+            </div>
+            <div class="portfolio-item" onclick="openModal('e-bookstoreimage.png')">
+                <p>BookStore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-content">
+            <img class="modal-content" id="modal-image">
+        </div>
+        <div id="caption"></div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+     
+        Email ID: team.codegen@gmail.com
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 CodeGen & Co. All rights reserved.</p>
+    </footer>
+    
+    <script src="portfolio.js"></script>   
+</body>
+</html>
